@@ -11,7 +11,9 @@
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.18.0/axios.min.js"></script>
     <script>
-        axios.get('/render_db/mangaList.json').then(function(database) {
+        const HOST = document.location.href;
+
+        axios.get(HOST + 'render_db/mangaList.json').then(function(database) {
             const mangaBase = database.data;
 
             mangaBase.forEach(function(manga) {
@@ -20,7 +22,7 @@
                 let domImages = "";
 
                 imagesBase.forEach(function(image) {
-                    domImages += `<img src="${image}"></img>`
+                    domImages += `<img src="${HOST}${image}"></img>`
                 })
                 
                 console.log(domImages);
