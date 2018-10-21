@@ -1,0 +1,38 @@
+[
+    {
+        "id": "b6f77d9f-08d1-4281-89cc-abf6919eb2c5",
+        "title": "Dungeon Seeker",
+        "pathName": "dungeon-seeker",
+        "chapter": {
+            "available": 3
+        },
+        "chapters": [
+            {
+                "id": "da57b1f1-f46b-451e-8e6d-f8b59a5116fe",
+                "pathName": "chapter-1",
+                "total": 32,
+                "images": [
+                    "/manga_db/dungeon-seeker/chapter-1/01.jpg",
+                    "/manga_db/dungeon-seeker/chapter-1/02.jpg",
+                    "/manga_db/dungeon-seeker/chapter-1/03.jpg",
+                    "/manga_db/dungeon-seeker/chapter-1/04.jpg"
+                ],
+                "_onAdded": "1540135346289"
+            },
+            {
+                "id": "be6d5487-c28e-413c-8507-b6f0bd2c8e10",
+                "pathName": "chapter-2",
+                "total": 27,
+                "_onAdded": "1540135346289"
+            },
+            {
+                "id": "d2f27578-c049-40f5-8b64-a5213e87a400",
+                "pathName": "chapter-3",
+                "total": 23,
+                "_onAdded": "1540135346289"
+            }
+        ],
+        "_onAdded": "1540135346289",
+        "_onUpdate": "1540135346289"
+    }
+]

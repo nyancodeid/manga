@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <div id="mangaList"></div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.18.0/axios.min.js"></script>
+    <script>
+        axios.get('/render_db/mangaList.json').then(function(database) {
+            const mangaBase = database.data;
+
+            mangaBase.forEach(function(manga) {
+                const imagesBase = manga.chapters[0].images;
+
+                let domImages = "";
+
+                imagesBase.forEach(function(image) {
+                    domImages += `<img src="${image}"></img>`
+                })
+                
+                console.log(domImages);
+
+                document.getElementById('mangaList').innerHTML = domImages;
+            })
+        })
+    </script>
+</body>
+</html>
