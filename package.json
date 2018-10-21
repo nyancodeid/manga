@@ -1,0 +1,15 @@
+{
+  "name": "manga-repo",
+  "version": "1.0.0",
+  "description": "Manga Hosting",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github-nyancodeid:nyancodeid/manga.git"
+  },
+  "author": "",
+  "license": "ISC"
+}
